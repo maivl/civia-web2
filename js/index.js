@@ -36,18 +36,24 @@ $(function () {
     }
   })
 
-  let index = 1;
-  setInterval(function () {
-    if (index < 10) {
-      $('#image').attr('src', `./img/pics/pop0000000${index}.png`)
-    } else if (index < 100) {
-      $('#image').attr('src', `./img/pics/pop000000${index}.png`)
+  for (let i = 1; i < 241; i++) {
+    if (i < 10) {
+      $('#image').append(`<img src="./img/pics/pop0000000${i}.png" />`)
+    } else if (i < 100) {
+      $('#image').append(`<img src="./img/pics/pop000000${i}.png" />`)
     } else {
-      $('#image').attr('src', `./img/pics/pop00000${index}.png`)
+      $('#image').append(`<img src="./img/pics/pop00000${i}.png "/>`)
     }
-    index++
+  }
+
+  let index = 0;
+  setInterval(() => {
+    $('#image').children().eq(index).css('display', 'block');
+    $('#image').children().eq(index).siblings().css('display', 'none');
+    index ++
+    console.log('index ===', index);
     if (index === 240) {
       index = 1
     }
-  }, 1000);
+  }, 30)
 })
