@@ -12,11 +12,9 @@ $(function () {
   // 获取网页宽度
   let clientWidth = docEl.clientWidth;
   let rootFontStyle = computedFontStyle(clientWidth, 2036);
-  console.log('rootFontStyle ---', rootFontStyle);
   docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
   $('.section').css('height', window.innerHeight)
   window.addEventListener('resize', () => {
-    console.log('123123');
     $('.section').css('height', window.innerHeight);
     clientWidth = docEl.clientWidth;
     rootFontStyle = computedFontStyle(clientWidth, 2036);
@@ -51,7 +49,6 @@ $(function () {
     $('#image').children().eq(index).css('display', 'block');
     $('#image').children().eq(index).siblings().css('display', 'none');
     index ++
-    console.log('index ===', index);
     if (index === 240) {
       index = 1
     }
