@@ -134,7 +134,7 @@
   height: 100%;
   background: url('../img/images/desc-1.svg') no-repeat;
   background-size: 9.2rem 9.2rem;
-  background-position: 6.2rem 0;
+  background-position: 5.8rem 0.7rem;
 }
 
 .section-1 .title {
@@ -169,7 +169,7 @@
 }
  
 .section-3 {
-  height: 10rem;
+  height: 11rem;
 }
 
 .section-3 .bg {
@@ -180,7 +180,7 @@
 }
 
 .section-4 {
-  height: 8rem;
+  height: 9rem;
 }
 
 .section-4 .bg {
@@ -246,7 +246,7 @@
 }
 
 .section-6 .desc .desc-2 {
-  width: 9rem;
+  width: 8.2rem;
 }
 
 .section-footer {
@@ -264,7 +264,12 @@
   padding-bottom: 0.5rem;
 }
 
+.section-footer .left .icon {
+  width: 0.5603rem;
+}
+
 .section-footer .left .logo {
+  width: 1rem;
   margin-left: 0.11rem;
 }
 
@@ -282,12 +287,16 @@
   font-family: p-Medium;
   font-size: 0.22rem;
   color: rgba(76, 209, 48, 1);
-  line-height: 0.4rem;
+  line-height: 0;
 }
 
 .section-footer .right .list p {
   font-family: p-Light;
   font-size: 0.18rem;
-  line-height: 0.4rem;
   color: #fff;
+  cursor: pointer;
+}
+
+.section-footer .right .list p:not(:nth-child(2)) {
+  margin-top: -0.8rem;
 }
