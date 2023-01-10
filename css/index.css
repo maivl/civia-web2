@@ -28,6 +28,10 @@
   src: url(../font/Poppins-Regular.ttf);
 }
 
+.body {
+  background: #FAFAFA;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -71,9 +75,23 @@
   align-items: center;
 }
 
+.image-box {
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+}
+
+.image-box .image-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #image {
-  width: 6rem;
-  height: 6rem;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -136,12 +154,13 @@
 
 .section-1 {
   height: 13rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .section-1 .bg {
+  width: 70%;
   height: 100%;
-  background: url('../img/images/desc-1.svg') no-repeat;
+  background: url('../img/images/desc-1.png') no-repeat;
   background-size: 9.2rem 9.2rem;
   background-position: 5.8rem 0.7rem;
 }
@@ -159,17 +178,16 @@
 }
 
 .section-2 .bg {
+  width: 70%;
   height: 100%;
-  background: url('../img/images/desc-2.svg') no-repeat;
+  background: url('../img/images/desc-2.png') no-repeat;
   background-size: 8.21rem 8.22rem;
-  background-position: -1rem 3.8rem;
+  background-position: -0.55rem 3.8rem;
 }
 
 .section-2 .desc {
   margin-top: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  margin-left: 6.68rem;
 }
 
 .section-2 .desc .desc-1,
@@ -182,10 +200,11 @@
 }
 
 .section-3 .bg {
+  width: 70%;
   height: 100%;
-  background: url('../img/images/desc-3.svg') no-repeat;
+  background: url('../img/images/desc-3.png') no-repeat;
   background-size: 7.62rem 7.62rem;
-  background-position: 5.8rem 0;
+  background-position: 6.5rem 1.1rem;
 }
 
 .section-4 {
@@ -193,17 +212,16 @@
 }
 
 .section-4 .bg {
+  width: 70%;
   height: 100%;
-  background: url('../img/images/desc-4.svg') no-repeat;
+  background: url('../img/images/desc-4.png') no-repeat;
   background-size: 10.13rem 10.13rem;
-  background-position: -2rem -1rem;
+  background-position: -1.7rem -0.9rem;
 }
 
 .section-4 .desc {
-  margin-top: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  margin-top: 1rem;
+  margin-left: 6.68rem;
 }
 
 .section-4 .desc .desc-1,
@@ -214,32 +232,38 @@
 .section-5 {
   height: 11rem;
   background: rgba(242, 242, 242, 1);
+  position: relative;
+}
+
+.section-5 .bg {
+  width: 70%;
+  height: 100%;
 }
 
 .section-5 .title {
   margin-top: 1.76rem;
 }
 
+.section-5 .image {
+  width: 15.3rem;
+  height: 7.66rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 2rem;
+}
+
 .section-5 .desc {
   margin-top: 0.6rem;
 }
 
-.section-5 .bg {
-  height: 100%;
-  background: url('../img/images/desc-5.svg') no-repeat;
-  background-size: 15.3rem 7.66rem;
-  background-position: 1rem 3.5rem;
-}
-
 .section-6 {
   height: 12rem;
+  position: relative;
 }
 
 .section-6 .bg {
+  width: 70%;
   height: 100%;
-  background: url('../img/images/desc-6.svg') no-repeat;
-  background-size: 17.98rem 8.99rem;
-  background-position: 0 1.8rem;
 }
 
 .section-6 .title {
@@ -247,11 +271,17 @@
   text-align: center;
 }
 
+.section-6 .image {
+  width: 17.98rem;
+  height: 8.99rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 0.7rem;
+}
+
 .section-6 .desc {
   margin-top: 4.6rem;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  margin-left: 5.8rem;
 }
 
 .section-6 .desc .desc-2 {
@@ -308,4 +338,15 @@
 
 .section-footer .right .list p:not(:nth-child(2)) {
   margin-top: -0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section-1 .bg,
+  .section-2 .bg,
+  .section-3 .bg,
+  .section-4 .bg,
+  .section-5 .bg,
+  .section-6 .bg {
+    width: 90%;
+  }
 }
