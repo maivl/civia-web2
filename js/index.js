@@ -59,23 +59,23 @@ $(function () {
       }
     })
   
-    for (let i = 1; i < 241; i++) {
-      if (i < 10) {
-        $('#image').append(`<img src="./img/pics/pop0000000${i}.png" />`)
-      } else if (i < 100) {
-        $('#image').append(`<img src="./img/pics/pop000000${i}.png" />`)
-      } else {
-        $('#image').append(`<img src="./img/pics/pop00000${i}.png "/>`)
-      }
-    }
+    // for (let i = 1; i < 241; i++) {
+    //   if (i < 10) {
+    //     $('#image').append(`<img src="./img/pics/pop0000000${i}.png" />`)
+    //   } else if (i < 100) {
+    //     $('#image').append(`<img src="./img/pics/pop000000${i}.png" />`)
+    //   } else {
+    //     $('#image').append(`<img src="./img/pics/pop00000${i}.png "/>`)
+    //   }
+    // }
   
-    let index = 0;
-    setInterval(() => {
-      $('#image').children().eq(index).css('display', 'block');
-      $('#image').children().eq(index).siblings().css('display', 'none');
-      index ++
-      if (index === 240) {
-        index = 1
-      }
-    }, 30)
+    // let index = 0;
+    // setInterval(() => {
+    //   $('#image').children().eq(index).css('display', 'block');
+    //   $('#image').children().eq(index).siblings().css('display', 'none');
+    //   index ++
+    //   if (index === 240) {
+    //     index = 1
+    //   }
+    // }, 30)
   })
