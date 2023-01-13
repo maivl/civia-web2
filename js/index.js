@@ -1,4 +1,6 @@
 $(function () {
+  $('#cvs').css('width', $('.image-box').width());
+  $('#cvs').css('height', $('.image-box').height());
   // multiple是倍数，默认是1，也可以自定义
   function computedFontStyle (
     clientWidth,
