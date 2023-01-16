@@ -127,6 +127,7 @@
 .title {
   font-family: p-Bold;
   font-size: 0.8rem;
+  line-height: 1rem;
   color: rgba(0, 35, 20, 1);
 }
 
@@ -199,10 +200,6 @@
   background-size: 7.03rem 7.04rem;
   background-position: 0.7rem 3.1rem;
   padding-left: 2rem;
-}
-
-.section-2 .title {
-  line-height: 1rem;
 }
 
 .section-2 .desc {
