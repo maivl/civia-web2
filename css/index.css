@@ -126,7 +126,7 @@
 
 .title {
   font-family: p-Bold;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: rgba(0, 35, 20, 1);
 }
 
@@ -136,7 +136,7 @@
 
 .desc .desc-1 {
   font-family: p-Lightlic;
-  font-size: 0.24rem;
+  font-size: 0.26rem;
   white-space: nowrap;
   position: relative;
 }
@@ -154,7 +154,7 @@
 
 .desc .desc-2 {
   font-family: p-Regular;
-  font-size: 0.28rem;
+  font-size: 0.30rem;
   font-weight: 400;
   white-space: nowrap;
   margin-top: -0.7rem;
@@ -170,8 +170,8 @@
   height: 100%;
   background-image: url('../img/images/desc-1.png');
   background-repeat: no-repeat;
-  background-size: 7.15rem 7.15rem;
-  background-position: 6rem 0.7rem;
+  background-size: 7.87rem 7.87rem;
+  background-position: 7rem 0.4rem;
   padding-left: 2rem;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .section-2 {
-  height: 12rem;
+  height: 13rem;
 }
 
 .section-2 .bg {
@@ -196,15 +196,15 @@
   height: 100%;
   background-image: url('../img/images/desc-2.png');
   background-repeat: no-repeat;
-  background-size: 6.4rem 6.4rem;
-  background-position: 0.95rem 3.5rem;
+  background-size: 7.03rem 7.04rem;
+  background-position: 0.7rem 3.3rem;
   padding-left: 2rem;
 }
 
 .section-2 .desc {
   /* margin-top: 0.5rem; */
   margin-top: -0.3rem;
-  margin-left: 5rem;
+  margin-left: 5.5rem;
 }
 
 .section-2 .desc .desc-1,
@@ -213,7 +213,7 @@
 }
  
 .section-3 {
-  height: 9rem;
+  height: 10rem;
 }
 
 .section-3 .bg {
@@ -221,8 +221,8 @@
   height: 100%;
   background-image: url('../img/images/desc-3.png');
   background-repeat: no-repeat;
-  background-size: 5.93rem 5.93rem;
-  background-position: 6.2rem 1.3rem;
+  background-size: 6.53rem 6.53rem;
+  background-position: 6.5rem 0.95rem;
   padding-left: 2rem;
 }
 
@@ -231,7 +231,7 @@
 }
 
 .section-4 {
-  height: 9rem;
+  height: 10rem;
 }
 
 .section-4 .bg {
@@ -239,14 +239,14 @@
   height: 100%;
   background-image: url('../img/images/desc-4.png');
   background-repeat: no-repeat;
-  background-size: 7.88rem 7.88rem;
+  background-size: 8.67rem 8.67rem;
   background-position: 0 -0.2rem;
   padding-left: 2rem;
 }
 
 .section-4 .desc {
-  margin-top: 1.4rem;
-  margin-left: 5rem;
+  margin-top: 1.5rem;
+  margin-left: 5.5rem;
 }
 
 .section-4 .desc .desc-1,
@@ -271,11 +271,11 @@
 }
 
 .section-5 .image {
-  width: 11.89rem;
-  height: 5.95rem;
+  width: 13.08rem;
+  height: 6.55rem;
   position: absolute;
-  top: 3.2rem;
-  left: 4.25rem;
+  top: 3.3rem;
+  left: 4.15rem;
 }
 
 .section-5 .desc {
@@ -283,7 +283,7 @@
 }
 
 .section-6 {
-  height: 10rem;
+  height: 11rem;
   position: relative;
 }
 
@@ -298,16 +298,16 @@
 }
 
 .section-6 .image {
-  width: 13.98rem;
-  height: 6.99rem;
+  width: 15.39rem;
+  height: 7.7rem;
   position: absolute;
-  top: 1.75rem;
-  left: 3rem;
+  top: 1.85rem;
+  left: 2rem;
 }
 
 .section-6 .desc {
-  margin-top: 3.3rem;
-  margin-left: 6.5rem;
+  margin-top: 3.8rem;
+  margin-left: 6.2rem;
 }
 
 .section-6 .desc .desc-2 {
