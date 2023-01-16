@@ -146,7 +146,7 @@
     width: 0.46rem;
     height: 0.46rem;
     position:absolute;
-    left: -0.56rem;
+    left: -0.54rem;
     top: -0.1rem;
     background: url('../img/images/question.svg') no-repeat;
     background-size: 0.46rem 0.46rem;
@@ -201,6 +201,10 @@
   padding-left: 2rem;
 }
 
+.section-2 .title {
+  line-height: 1rem;
+}
+
 .section-2 .desc {
   /* margin-top: 0.5rem; */
   margin-top: -0.6rem;
@@ -228,6 +232,10 @@
 
 .section-3 .desc {
   margin-top: -0.3rem;
+}
+
+.section-3 .desc .desc-1:before {
+  left: -0.56rem;
 }
 
 .section-4 {
