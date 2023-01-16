@@ -240,13 +240,13 @@
   background-image: url('../img/images/desc-4.png');
   background-repeat: no-repeat;
   background-size: 8.67rem 8.67rem;
-  background-position: 0 -0.2rem;
+  background-position: -0.4rem -0.2rem;
   padding-left: 2rem;
 }
 
 .section-4 .desc {
   margin-top: 1.5rem;
-  margin-left: 5.5rem;
+  margin-left: 5.1rem;
 }
 
 .section-4 .desc .desc-1,
@@ -263,7 +263,7 @@
 .section-5 .bg {
   width: 70%;
   height: 100%;
-  padding-left: 2rem;
+  padding-left: 1.3rem;
 }
 
 .section-5 .title {
@@ -275,7 +275,7 @@
   height: 6.55rem;
   position: absolute;
   top: 3.3rem;
-  left: 4.15rem;
+  left: 3.45rem;
 }
 
 .section-5 .desc {
