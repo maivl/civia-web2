@@ -372,6 +372,9 @@
   font-family: p-Light;
   font-size: 0.18rem;
   color: #fff;
+}
+
+.section-footer .right .list p.cur {
   cursor: pointer;
 }
 
