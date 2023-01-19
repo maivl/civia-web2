@@ -38,6 +38,14 @@
   padding-top: 1px;
 }
 
+.min768 {
+  display: inherit;
+}
+
+.max768 {
+  display: none;
+}
+
 /* .container-lg {
   border: 1px solid;
 } */
@@ -372,12 +380,107 @@
 }
 
 @media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
   .section-1 .bg,
   .section-2 .bg,
   .section-3 .bg,
   .section-4 .bg,
   .section-5 .bg,
   .section-6 .bg {
-    width: 90%;
+    width: 100%;
+  }
+  .min768 {
+  display: none;
+}
+
+.max768 {
+  display: inherit;
+}
+  .title {
+    font-size: 0.5rem;
+    line-height: .7rem;
+  }
+  .section .desc1 {
+    font-size: .5rem;
+  }
+  .section-1 .bg {
+    background-size: 5.87rem 5.87rem;
+    background-position: 4.3rem 1.4rem;
+    padding-left: .8rem;
+  }
+  .section-1 .title {
+    margin-top: 1.78rem;
+  }
+  .section-2 .bg {
+    background-size: 6.03rem 6.04rem;
+    background-position: -0.4rem 2.75rem;
+    padding-left: .8rem;
+  }
+  .section-2 .desc {
+    margin-left: 4.2rem;
+  }
+  .section-3 .bg {
+    padding-left: .8rem;
+    background-size: 4.53rem 4.53rem;
+    background-position: 5rem 1.4rem;
+  }
+  .section-4 .bg {
+    padding-left: .8rem;
+    background-size: 6.67rem 6.67rem;
+    background-position: -1rem 0;
+  }
+  .section-4 .desc {
+    margin-top: 1.3rem;
+    margin-left: 4.1rem;
+  }
+  .section-5 .bg {
+    padding-left: 0.5rem;
+  }
+  .section-5 .image {
+    width: 7.848rem;
+    height: 3.928rem;
+    left: 45%;
+    top: 4.8rem;
+    transform: translateX(-50%);
+  }
+  .section-6 .image {
+    width: 10.773rem;
+    height: 5.39rem;
+    top: 1.85rem;
+    left: -1rem;
+  }
+  .section-6 .desc {
+    margin-top: 3rem;
+    margin-left: 4rem;
+  }
+  .section-footer {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-footer .left {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .section-footer .left .icon {
+    width: 1rem;
+  }
+
+  .section-footer .left .logo {
+    width: 2rem;
+    margin-left: 0.11rem;
+  }
+  .section-footer .right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-footer .right .list {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 0;
   }
 }
