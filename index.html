@@ -159,7 +159,6 @@
     const imgMaps = mapImages(urls);
 
     function loadImg(src) {
-      console.log('----- src -----', src);
       return fetch(`/img/pics/${src}`).then((res) => res.blob()).then( blob => {
         const img = new Image();
         img.src =  URL.createObjectURL(blob);
@@ -178,7 +177,6 @@
     }
 
     const ctx = $('#cvs')[0].getContext('2d');
-    // console.log('----- ctx -----', ctx);
     let index = 0;
     drawImg(imgMaps, index, ctx);
     setInterval(() => {

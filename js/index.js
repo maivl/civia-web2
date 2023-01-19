@@ -15,7 +15,6 @@ $(function () {
     let rootFontStyle = computedFontStyle(clientWidth, 2036);
     docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
   } else {
-    console.log('768');
     let rootFontStyle = computedFontStyle(clientWidth, 960);
     docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
   }
@@ -28,7 +27,6 @@ $(function () {
       rootFontStyle = computedFontStyle(clientWidth, 2036);
       docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
     } else {
-      console.log('768');
       rootFontStyle = computedFontStyle(clientWidth, 960);
       docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
     }
