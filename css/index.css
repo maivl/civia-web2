@@ -138,6 +138,7 @@
   line-height: 1rem;
   color: rgb(0, 35, 20);
   opacity: 0;
+  transform: translateY(20px);
 }
 
 .title.show {
@@ -150,6 +151,7 @@
 
 .desc {
   opacity: 0;
+  transform: translateY(20px);
 }
 
 .desc.show {
@@ -158,6 +160,7 @@
 
 .image {
   opacity: 0;
+  transform: translateY(20px);
 }
 
 .image.show {
@@ -167,9 +170,11 @@
 @keyframes show {
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: translateY(-20px);
   }
 }
 
@@ -209,10 +214,6 @@
   width: 70%;
   height: 100%;
   position: relative;
-  /* background-image: url('../img/images/desc-1.png');
-  background-repeat: no-repeat;
-  background-size: 7.87rem 7.87rem;
-  background-position: 7rem 0.4rem; */
   padding-left: 2rem;
 }
 
@@ -230,10 +231,6 @@
 
 .section-1 .desc {
   margin-top: -0.6rem;
-}
-
-.boxShadow {
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .section-2 {
