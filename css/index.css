@@ -155,7 +155,7 @@
 }
 
 .desc.show {
-  animation: show 0.8s linear forwards;
+  animation: show 0.5s linear forwards;
 }
 
 .image {
@@ -164,7 +164,7 @@
 }
 
 .image.show {
-  animation: show 0.8s linear forwards;
+  animation: show 0.5s linear forwards;
 }
 
 @keyframes show {
