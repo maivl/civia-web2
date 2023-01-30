@@ -69,5 +69,24 @@ $(function () {
       $('.header').css('background', '#fff');
       $('.header').addClass('boxShadow');
     }
+
+    function isInViewPortOfTwo(el) {
+      const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+      const top = el.getBoundingClientRect() && el.getBoundingClientRect().top
+      // console.log('top', top)
+      return top <= viewPortHeight - 100
+    }
+    
+    for (let i = 1; i < 7;i ++) {
+      let title = document.querySelector(`.section-${i} .title`);
+      if (isInViewPortOfTwo(title)) {
+        $(`.section-${i} .title`).addClass('show');
+      }
+      let image = document.querySelector(`.section-${i} .image`);
+      if (isInViewPortOfTwo(image)) {
+        $(`.section-${i} .image`).addClass('show');
+        $(`.section-${i} .desc`).addClass('show');
+      }
+    }
   })
 })

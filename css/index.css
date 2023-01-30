@@ -136,11 +136,41 @@
   font-family: p-Bold;
   font-size: 0.8rem;
   line-height: 1rem;
-  color: rgba(0, 35, 20, 1);
+  color: rgb(0, 35, 20);
+  opacity: 0;
+}
+
+.title.show {
+  animation: show .5s linear forwards;
 }
 
 .title span {
   color: rgba(76, 209, 48, 1);
+}
+
+.desc {
+  opacity: 0;
+}
+
+.desc.show {
+  animation: show 1s linear forwards;
+}
+
+.image {
+  opacity: 0;
+}
+
+.image.show {
+  animation: show 1s linear forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .desc .desc-1 {
@@ -172,16 +202,26 @@
 .section-1 {
   height: 12rem;
   margin-top: 0.5rem;
+  
 }
 
 .section-1 .bg {
   width: 70%;
   height: 100%;
-  background-image: url('../img/images/desc-1.png');
+  position: relative;
+  /* background-image: url('../img/images/desc-1.png');
   background-repeat: no-repeat;
   background-size: 7.87rem 7.87rem;
-  background-position: 7rem 0.4rem;
+  background-position: 7rem 0.4rem; */
   padding-left: 2rem;
+}
+
+.section-1 .image {
+  width: 7.87rem;
+  height: 7.87rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 7rem;
 }
 
 .section-1 .title {
@@ -203,11 +243,16 @@
 .section-2 .bg {
   width: 70%;
   height: 100%;
-  background-image: url('../img/images/desc-2.png');
-  background-repeat: no-repeat;
-  background-size: 7.03rem 7.04rem;
-  background-position: 0.7rem 2.55rem;
+  position: relative;
   padding-left: 2rem;
+}
+
+.section-2 .image {
+  width: 7.03rem;
+  height: 7.04rem;
+  position: absolute;
+  top: 2.55rem;
+  left: 0.7rem;
 }
 
 .section-2 .desc {
@@ -228,11 +273,16 @@
 .section-3 .bg {
   width: 70%;
   height: 100%;
-  background-image: url('../img/images/desc-3.png');
-  background-repeat: no-repeat;
-  background-size: 6.53rem 6.53rem;
-  background-position: 6.5rem 0.6rem;
+  position: relative;
   padding-left: 2rem;
+}
+
+.section-3 .image {
+  width: 6.53rem;
+  height: 6.53rem;
+  position: absolute;
+  top: 0.6rem;
+  left: 6.5rem;
 }
 
 .section-3 .desc {
@@ -250,11 +300,16 @@
 .section-4 .bg {
   width: 70%;
   height: 100%;
-  background-image: url('../img/images/desc-4.png');
-  background-repeat: no-repeat;
-  background-size: 8.67rem 8.67rem;
-  background-position: -0.4rem -0.5rem;
+  position: relative;
   padding-left: 2rem;
+}
+
+.section-4 .image {
+  width: 8.67rem;
+  height: 8.67rem;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.4rem;
 }
 
 .section-4 .desc {
