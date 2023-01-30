@@ -142,7 +142,7 @@
 }
 
 .title.show {
-  animation: show 1s linear forwards;
+  animation: show 0.5s linear forwards;
 }
 
 .title span {
@@ -155,7 +155,7 @@
 }
 
 .desc.show {
-  animation: show 0.5s linear forwards;
+  animation: show 0.8s linear forwards;
 }
 
 .image {
@@ -164,7 +164,7 @@
 }
 
 .image.show {
-  animation: show 1s linear forwards;
+  animation: show 0.8s linear forwards;
 }
 
 @keyframes show {
