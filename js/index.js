@@ -35,35 +35,36 @@ $(function () {
 
   window.addEventListener('scroll', function (e) {
     const scrollTop = (e.srcElement ? e.srcElement.documentElement.scrollTop : false) || window.pageYOffset || (e.srcElement ? e.srcElement.body.scrollTop : 0);
-    if (scrollTop < window.innerHeight / 11 * 1) {
+    if (scrollTop < window.innerHeight / 20 * 13) {
       $('.header').css('background', 'transparent');
       $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0)')
-    } else if (scrollTop < window.innerHeight / 11 * 2) {
+    } else if (scrollTop < window.innerHeight / 20 * 14) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.15)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.15)')
-    } else if (scrollTop < window.innerHeight / 11 * 3) {
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.05)')
+    } else if (scrollTop < window.innerHeight / 20 * 15) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.3)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.2)')
-    } else if (scrollTop < window.innerHeight / 11 * 4) {
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.1)')
+    } else if (scrollTop < window.innerHeight / 20 * 16) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.45)');
       $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.25)')
-    } else if (scrollTop < window.innerHeight / 11 * 5) {
+    } else if (scrollTop < window.innerHeight / 20 * 17) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.6)');
       $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.3)')
-    } else if (scrollTop < window.innerHeight / 11 * 6) {
+    } else if (scrollTop < window.innerHeight / 20 * 18) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.75)');
       $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.35)')
-    } else if (scrollTop < window.innerHeight / 11 * 7) {
-      $('.header').css('background', 'rgba(255, 255, 255, 0.85)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.4)')
+    } else if (scrollTop < window.innerHeight / 20 * 19) {
+      $('.header').css('background', 'rgba(255, 255, 255, 0.9)');
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.45)')
     } else {
       $('.header').css('background', '#fff');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.45)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.5)')
     }
 
     function isInViewPortOfTwo(el) {
       const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
       const top = el.getBoundingClientRect() && el.getBoundingClientRect().top
+      // console.log('top', top)
       return top <= viewPortHeight - 150
     }
     
