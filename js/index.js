@@ -40,32 +40,32 @@ $(function () {
       $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0)')
     } else if (scrollTop < window.innerHeight / 20 * 14) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.15)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.05)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.01)')
     } else if (scrollTop < window.innerHeight / 20 * 15) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.3)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.1)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.05)')
     } else if (scrollTop < window.innerHeight / 20 * 16) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.45)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.25)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.1)')
     } else if (scrollTop < window.innerHeight / 20 * 17) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.6)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.3)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.15)')
     } else if (scrollTop < window.innerHeight / 20 * 18) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.75)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.35)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.2)')
     } else if (scrollTop < window.innerHeight / 20 * 19) {
       $('.header').css('background', 'rgba(255, 255, 255, 0.9)');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.45)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.25)')
     } else {
       $('.header').css('background', '#fff');
-      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.5)')
+      $('.header').css('box-shadow', '-5px 0 10px rgba(0, 0, 0, 0.3)')
     }
 
     function isInViewPortOfTwo(el) {
       const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
       const top = el.getBoundingClientRect() && el.getBoundingClientRect().top
       // console.log('top', top)
-      return top <= viewPortHeight - 150
+      return top <= viewPortHeight - 100
     }
     
     for (let i = 1; i < 7;i ++) {
