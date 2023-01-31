@@ -166,6 +166,10 @@
 <script src="./js/index.js"></script>
 <script>
   $(function() {
+    $('.cur').click(function() {
+      window.location.href = './whatIsCivia.html';
+    })
+    
     const urls = (new Array(240).fill(0, 0).map( (item, idx) => `pop00000${idx>98? '': (idx>8? '0': '00')}${idx +1}.png`));
 
     function mapImages (urls) {

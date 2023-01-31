@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: p-Bold;
+  src: url(../font/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: p-Light;
+  src: url(../font/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: p-Lightlic;
+  src: url(../font/Poppins-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: p-Medium;
+  src: url(../font/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: p-Regular;
+  src: url(../font/Poppins-Regular.ttf);
+}
+
+.body {
+  background: rgba(0, 35, 20, 1);
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1px;
+}
+
+.section-header {
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 35, 20, 1);
+}
+
+.section-header .section-header-item {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header .section-header-item .logo {
+  width: 1rem;
+  margin-right: 0.97rem;
+  cursor: pointer;
+}
+
+.section-header .section-header-item .icon {
+  width: 0.5613rem;
+  margin-left: 0.93rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.667rem;
+  font-family: p-Medium;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.45rem;
+}
+
+.title span {
+  color: rgba(76, 209, 48, 1);
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  width: 13.0833rem;
+  padding-left: 0.35rem;
+  padding-right: 0.35rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.2rem;;
+  background: rgba(227, 249, 227, 1);
+  border-radius: 0.52rem;
+}
+
+.section-2 {
+  margin-top: 0.49rem;
+}
+
+.section-3 {
+  margin-bottom: 1.53rem;
+}
+
+.section-title {
+  font-size: 0.4375rem;
+  color: rgba(0, 35, 20, 1);
+  font-family: p-Regular;
+  /* line-height: 0px; */
+
+}
+
+.section-content {
+  font-size: 0.3125rem;
+  color: rgba(0, 35, 20, 1);
+  font-family: p-Regular;
+  margin-top: -0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.section-footer {
+  height: 4rem;
+  background: rgba(0, 35, 20, 1);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px -10.42px 20.83px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-footer .left {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0.94rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-footer .left .icon {
+  width: 0.5603rem;
+}
+
+.section-footer .left .logo {
+  width: 1rem;
+  margin-left: 0.11rem;
+}
+
+.section-footer .right {
+  display: flex;
+}
+
+.section-footer .right .list {
+  text-align: right;
+  margin-right: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.section-footer .right .list h1 {
+  font-family: p-Medium;
+  font-size: 0.22rem;
+  color: rgba(76, 209, 48, 1);
+  line-height: 0;
+}
+
+.section-footer .right .list p {
+  font-family: p-Light;
+  font-size: 0.18rem;
+  color: #fff;
+}
+
+.section-footer .right .list p.cur {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.section-footer .right .list p:not(:nth-child(2)) {
+  margin-top: -0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .section-header {
+    height: 1.4rem;
+  }
+
+  .section-header .section-header-item {
+    justify-content: center;
+  }
+
+  .section-header .section-header-item .logo {
+    width: auto;
+    height: 0.82rem;
+    margin-right: 0;
+    margin-left: 0.2rem;
+  }
+
+  .section-header .section-header-item .icon {
+    width: auto;
+    height: 0.82rem;
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 0.8333rem;
+    margin-top: 2.25rem;
+  }
+
+  .title.phone {
+    margin-top: 1.21rem;
+  }
+
+  .section-1,
+  .section-2,
+  .section-3 {
+    width: 7.125rem;
+  }
+
+  .section-footer {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-footer .left {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .section-footer .left .icon {
+    width: 1rem;
+  }
+
+  .section-footer .left .logo {
+    width: 2rem;
+    margin-left: 0.11rem;
+  }
+  .section-footer .right {
+    margin-top: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-footer .right .list {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .section-footer .right .list h1 {
+    font-size: 0.375rem;
+  }
+
+  .section-footer .right .list p {
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+  }
+}
+  

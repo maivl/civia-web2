@@ -420,6 +420,7 @@
 
 .section-footer .right .list p.cur {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .section-footer .right .list p:not(:nth-child(2)) {
@@ -693,7 +694,7 @@
 
   .section-2 .title {
     margin-left: 0.97rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   .section-2 .image {
