@@ -14,8 +14,11 @@ $(function () {
   if (clientWidth > 768) {
     let rootFontStyle = computedFontStyle(clientWidth, 2036);
     docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
-  } else {
+  } else if (clientWidth > 770 && clientWidth <= 768) {
     let rootFontStyle = computedFontStyle(clientWidth, 960);
+    docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
+  } else {
+    let rootFontStyle = computedFontStyle(clientWidth, 750);
     docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
   }
   
@@ -24,10 +27,13 @@ $(function () {
     $('.section').css('height', window.innerHeight);
     clientWidth = docEl.clientWidth;
     if (clientWidth > 768) {
-      rootFontStyle = computedFontStyle(clientWidth, 2036);
+      let rootFontStyle = computedFontStyle(clientWidth, 2036);
+      docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
+    } else if (clientWidth > 770 && clientWidth <= 768) {
+      let rootFontStyle = computedFontStyle(clientWidth, 960);
       docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
     } else {
-      rootFontStyle = computedFontStyle(clientWidth, 960);
+      let rootFontStyle = computedFontStyle(clientWidth, 750);
       docEl.setAttribute('style', `font-size: ${rootFontStyle}px`);
     }
     
@@ -73,9 +79,20 @@ $(function () {
         $(`.section-${i} .title`).addClass('show');
       }
       let image = document.querySelector(`.section-${i} .image`);
-      if (isInViewPortOfTwo(image)) {
-        $(`.section-${i} .image`).addClass('show');
-        $(`.section-${i} .desc`).addClass('show');
+      if (clientWidth > 770) {
+        if (isInViewPortOfTwo(image)) {
+          $(`.section-${i} .image`).addClass('show');
+          $(`.section-${i} .desc`).addClass('show');
+        }
+      } else {
+        if (isInViewPortOfTwo(image)) {
+          $(`.section-${i} .image`).addClass('show');
+        }
+
+        let desc = document.querySelector(`.section-${i} .desc`);
+        if (isInViewPortOfTwo(desc)) {
+          $(`.section-${i} .desc`).addClass('show');
+        }
       }
     }
   })
