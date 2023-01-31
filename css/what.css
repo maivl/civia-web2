@@ -68,7 +68,7 @@
 
 .title {
   font-size: 1.667rem;
-  font-family: p-Medium;
+  font-family: p-Bold;
   color: #fff;
   text-align: center;
   margin-top: 1.45rem;
@@ -85,7 +85,7 @@
   padding-left: 0.35rem;
   padding-right: 0.35rem;
   padding-top: 0.6rem;
-  padding-bottom: 0.2rem;;
+  padding-bottom: 0.2rem;
   background: rgba(227, 249, 227, 1);
   border-radius: 0.52rem;
 }
@@ -210,6 +210,13 @@
   .section-2,
   .section-3 {
     width: 7.125rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    border-radius: 0.2083rem;
+  }
+
+  .section-content {
+    margin-top: -0.8rem;
   }
 
   .section-footer {
@@ -251,4 +258,3 @@
     line-height: 0.25rem;
   }
 }
-  
