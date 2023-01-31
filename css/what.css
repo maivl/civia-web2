@@ -32,6 +32,14 @@
   background: rgba(0, 35, 20, 1);
 }
 
+.showLarge {
+  display: inherit;
+}
+
+.showSmall {
+  display: none;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -176,6 +184,14 @@
     overflow-x: hidden;
   }
 
+  .showLarge {
+    display: none;
+  }
+
+  .showSmall {
+    display: inherit;
+  }
+
   .section-header {
     height: 1.4rem;
   }
@@ -184,17 +200,9 @@
     justify-content: center;
   }
 
-  .section-header .section-header-item .logo {
-    width: auto;
-    height: 0.82rem;
-    margin-right: 0;
-    margin-left: 0.2rem;
-  }
-
-  .section-header .section-header-item .icon {
-    width: auto;
-    height: 0.82rem;
-    margin-left: 0;
+  .section-header .section-header-item .iconLogo {
+    width: 2.7936rem;
+    height: 0.8542rem;
   }
 
   .title {
@@ -258,3 +266,4 @@
     line-height: 0.25rem;
   }
 }
+  
